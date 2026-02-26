@@ -1,0 +1,96 @@
+name: Bug Report
+description: Report a bug in the PeerAds iOS SDK
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please fill in as much detail as possible.
+        **Do not report security vulnerabilities here** — see [SECURITY.md](../../SECURITY.md).
+
+  - type: input
+    id: sdk-version
+    attributes:
+      label: SDK Version
+      description: What version of the PeerAds iOS SDK are you using?
+      placeholder: e.g. 0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS Version
+      description: What iOS version is affected?
+      placeholder: e.g. iOS 17.2
+    validations:
+      required: true
+
+  - type: input
+    id: xcode-version
+    attributes:
+      label: Xcode Version
+      placeholder: e.g. Xcode 15.2
+    validations:
+      required: false
+
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: e.g. iPhone 15 Pro, iPhone SE (3rd gen), Simulator
+    validations:
+      required: false
+
+  - type: dropdown
+    id: ad-format
+    attributes:
+      label: Ad Format
+      options:
+        - Banner
+        - Interstitial
+        - Rewarded
+        - All / Not format-specific
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Initialize SDK with config ...
+        2. Call PeerAds.shared.loadBanner(...)
+        3. See error ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console / Crash Log
+      description: Paste relevant log or crash output here.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+    validations:
+      required: false

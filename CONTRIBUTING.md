@@ -8,7 +8,7 @@ This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.
 
 ## Reporting Bugs
 
-Before opening an issue, search [existing issues](https://github.com/peerads/peerads-ios/issues) to avoid duplicates. When filing a bug report please include:
+Before opening an issue, search [existing issues](https://github.com/peer-ads/ios-sdk/issues) to avoid duplicates. When filing a bug report please include:
 
 - SDK version (from `Package.resolved`)
 - Xcode version and iOS deployment target
@@ -19,12 +19,12 @@ Before opening an issue, search [existing issues](https://github.com/peerads/pee
 
 ## Suggesting Features
 
-Open a [GitHub Discussion](https://github.com/peerads/peerads-ios/discussions) before filing a feature request.
+Open a [GitHub Discussion](https://github.com/peer-ads/ios-sdk/discussions) before filing a feature request.
 
 ## Development Setup
 
 ```bash
-git clone https://github.com/peerads/peerads-ios.git
+git clone https://github.com/peer-ads/ios-sdk.git
 cd peerads-ios
 
 # Open in Xcode
